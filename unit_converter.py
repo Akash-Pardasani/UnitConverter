@@ -46,6 +46,69 @@ def check_time(value, units_from, units_to, decimal_places):
 
     return False
 
+
+# PRESSURE CONVERSION
+# Pascal and Bar
+def p_to_b(value):
+    return 0.00001*value
+def b_to_p(value):
+    return 100000*value
+
+# Pascal and Torr
+def p_to_t(value):
+    return 0.0075*value
+def t_to_p(value):
+    return 133.3223*value
+
+# Pascal and atm
+def p_to_a(value):
+    return 0.00000986*value
+def a_to_p(value):
+    return 101325*value
+
+# Pascal and psi
+def p_to_psi(value):
+    return 0.000145*value
+def psi_to_p(value):
+    return  6894.757*value
+
+# Bar and Torr
+def b_to_t(value):
+    return 750.06168*value
+def t_to_b(value):
+    return 0.00133322*value
+
+# Bar and atm
+def b_to_a(value):
+    return 0.9869*value
+def a_to_b(value):
+    return 1.01325*value
+
+#Bar and psi
+def b_to_psi(value):
+    return 14.50377*value
+def psi_to_b(value):
+    return 0.068947*value
+
+# Torr and atm
+def t_to_a(value):
+    return 0.00131579*value
+def a_to_t(value):
+    return 760*value
+
+# Torr and psi
+def t_to_psi(value):
+    return 0.01933*value
+def psi_to_t(value):
+    return 51.71493*value
+
+# psi and atm
+def psi_to_a(value):
+    return 0.06804*value
+def at_to_psi(value):
+    return 14.69595*value
+
+
 # DISTANCE CONVERSION
 # Convert Metric units to Imperial units
 def metric_to_imperial(value, metric_base, imperial_base, imperial_multiplier):
